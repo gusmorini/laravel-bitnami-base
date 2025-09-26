@@ -1,3 +1,7 @@
+# Ambiente de desenvolvimento Laravel 12 conteinerizado
+
+- neste teste estou utilizando o podman mas poderia ser o docker sem problemas:
+
 ## comandos:
 
 ```bash
