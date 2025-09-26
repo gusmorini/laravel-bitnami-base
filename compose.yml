@@ -4,8 +4,6 @@ services:
     image: bitnami/laravel:latest
     ports:
       - 8000:8000
-    user: bitnami
-    working_dir: /app
     volumes:
       - ${PWD}/src:/app
     environment:
@@ -14,8 +12,6 @@ services:
       DB_DATABASE: laravel
       DB_USERNAME: root
       DB_PASSWORD: passwd
-    depends_on:
-      - db
   
   db:
     image: mariadb:latest
@@ -29,7 +25,3 @@ services:
     image: adminer
     ports:
       - 9000:8080
-    depends_on:
-      - db
-
-  
