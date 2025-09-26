@@ -1,4 +1,4 @@
-## commands:
+## comandos:
 
 ```bash
 podman run --rm -it -v ./src/:/app bitnami/laravel:latest composer install
@@ -15,6 +15,10 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=passwd
+```
+
+```bash
+podman-compose up -d
 ```
 
 ```bash
